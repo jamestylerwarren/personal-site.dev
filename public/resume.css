@@ -1,6 +1,6 @@
 /*----------- Background image ---------------------------*/
 body {
-  background: url(TXbackgroundmap.jpg) no-repeat center center fixed; 
+  background: url(samapThree.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -223,6 +223,6 @@ body {
 
 #lead-cover {
     text-align: center;
-    color: #252525;
-    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white; 
+    color: black;
+    font-size: xx-large;
 }
