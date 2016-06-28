@@ -15,7 +15,7 @@
 			position: map.center,
 			map: map,
 			draggable: true,
-			icon: '/img/pin.png'
+			icon: 'img/pin.png'
 		});
 		marker.addListener('dragend',function(event) {
 		getWeather();
