@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="simplesimon.css">
+	<title>Simple Simon</title>
+</head>
+<body>
+	<div class='wrapper'>
+		<div id='outterCircle'>
+			<div id='innerCircle'>
+				<button class='buttons' id='greenButton' type='button' data-number='1' class='green'></button>
+				<button class='buttons' id='redButton' type='button' data-number='2' class='red'></button>
+				<button class='buttons' id='yellowButton' type='button' data-number='3' class='yellow'></button>
+				<button class='buttons' id='blueButton' type='button' data-number='4' class='blue'></button>
+				<img id='cnapproved' src="cnapproved.png">
+			</div>
+		</div>
+
+		<div class='gameInfo'>
+			<h1>Level: <span data-round='0'>1</span></h1>
+			<button id='start' class ='start' type='button' class='start'>Start</button>
+			
+		</div>
+	</div>
+	<div>
+		<img id='cnPunch' src='cnpunch.gif'>
+		<p id='gameInfoP'>Sorry - you lost. Click start to begin a new game</p>
+	</div>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script type='text/javascript' src='simplesimon.js'></script>
+
+
+	
+</body>
+</html>
