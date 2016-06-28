@@ -1,0 +1,77 @@
+
+
+
+
+/*CSS for buttons below*/
+button
+{	
+	height: 75px;
+    width: 75px;
+    margin: 5px;
+    border: 2px solid black;
+    background-color: #E4DFDF;
+    font-size: 1.75em;
+    border-radius: 10px;
+
+}
+
+button:hover {
+	background-color: #B5AFAF;
+}
+
+button:active {
+  background-color: #B5AFAF;
+  transform: translateY(3px);
+}
+
+button#clear:hover {
+	background-color: #DE3A3A;
+
+}
+
+#clear {
+	background-color: #E46565;
+}
+
+#zero {
+	height: 75px;
+	width: 165px;
+}
+
+#overallContainer {
+	border: 2px solid black;
+	width: 354px;
+	background-color: #282829;
+	border-radius: 10px;
+}
+
+#fieldOne, #fieldTwo {
+	height: 75px;
+	width: 125px;
+	margin: 5px;
+	font-size: 1.75em;
+	border: 2px solid black;
+	background-color: #E4DFDF;
+	border-radius: 10px;
+
+}
+
+#operator {
+	height: 75px;
+	width: 45px;
+	margin: 5px;
+	font-size: 1.75em;
+	border: 2px solid black;
+	background-color: #E4DFDF;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.operationSigns {
+	background-color: #EAB552;
+}
+
+.operationSigns:hover {
+	background-color: #EAA31C;
+}
+
