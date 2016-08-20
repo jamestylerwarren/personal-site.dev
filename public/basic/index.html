@@ -29,10 +29,33 @@
   </head>
 
   <body>
-
+      <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$("#menu-close").click();>Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
     <div id="h">
       <div class="logo">
-        <h2>LOGO</h2>
       </div><!--/logo-->
       <div class="container centered">
         <div class="row">
@@ -41,21 +64,21 @@
           </div>
         </div><!--/row-->
 
-        <div class="row mt">
+       <!--  <div class="row mt">
           <div class="col-sm-4">
             <i class="ion-ios7-monitor-outline"></i>
             <h3>Web Design</h3>
-          </div><!--/col-md-4-->
+          </div> --><!--/col-md-4-->
 
-          <div class="col-sm-4">
+          <!-- <div class="col-sm-4">
             <i class="ion-ios7-browsers-outline"></i>
             <h3>UI Development</h3>
-          </div><!--/col-md-4-->
+          </div> --><!--/col-md-4-->
 
-          <div class="col-sm-4">
+          <!-- <div class="col-sm-4">
             <i class="ion-ios7-copy-outline"></i>
             <h3>Brand Identity</h3>
-          </div><!--/col-md-4-->
+          </div> --><!--/col-md-4-->
         
         </div><!--/row-->
       </div><!--/container-->
@@ -63,11 +86,14 @@
 
     <div class="container ptb">
       <div class="row">
-        <h2 class="centered mb">I craft handsome sites & stunning apps<br/>that empower your startup.</h2>
-        <div class="col-md-6">
+        <h2 class="centered mb">This part will be about me, including a video</h2>
+        <div class="col-md-4">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div><!--/col-md-6-->
-        <div class="col-md-6">
+        <div class="col-md-4">
+          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</p>
+        </div><!--/col-md-6-->
+        <div class="col-md-4">
           <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</p>
         </div><!--/col-md-6-->
       </div><!--/row-->
