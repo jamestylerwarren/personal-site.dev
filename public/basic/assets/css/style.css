@@ -377,6 +377,11 @@ input {
 	letter-spacing: 1px;
 }
 
+/*ABOUT ME*/
+#about-me-right {
+	text-align: center;
+}
+
 /*NAVBAR*/
 .sidenav {
     height: 100%;
