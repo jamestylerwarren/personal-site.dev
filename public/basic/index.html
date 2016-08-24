@@ -14,6 +14,8 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <script src="https://use.fontawesome.com/038ac1c7c6.js"></script>
+
     <link href="assets/css/ionicons.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -29,31 +31,17 @@
   </head>
 
   <body>
-      <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#services" onclick=$("#menu-close").click();>Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-            </li>
-        </ul>
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#about">About</a>
+      <a id="portfolio_link" href="#portfolio">Portfolio</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
     </nav>
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    
     <div id="h">
       <div class="logo">
       </div><!--/logo-->
@@ -81,32 +69,63 @@
           </div> --><!--/col-md-4-->
         
         </div><!--/row-->
+
+        <!-- Carot Bouncing -->
+        <div class="container centered">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <a href="#about"><div class="arrow bounce"></div></a>
+            </div>
+          </div>
+        </div> 
       </div><!--/container-->
     </div><!--H-->
 
-    <div class="container ptb">
+
+    <!-- ABOUT ME -->
+    <div id="about" class="container ptb">
       <div class="row">
         <h2 class="centered mb">This part will be about me, including a video</h2>
-        <div class="col-md-4">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div class="col-md-3">
+          <p>Junior-level developer transitioning after 8+ years as a project manager. Passionate and naturally curious about learning new skills and technologies, I have experience solving complex problems amidst resource restraints and delivering actionable results. I’m uniquely interested in using back-end languages to solve problems for users and businesses alike. I am currently honing my skills with various personal projects in my free time.</p>
         </div><!--/col-md-6-->
-        <div class="col-md-4">
-          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</p>
+        <div class="col-md-6">
+          <!-- 16:9 aspect ratio -->
+          <!-- <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tkwPVkPbWzU?list=PLA8870559DEEBE00A"></iframe>
+          </div> -->
+
+          <!-- 4:3 aspect ratio -->
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tkwPVkPbWzU?list=PLA8870559DEEBE00A"></iframe>
+          </div>
         </div><!--/col-md-6-->
-        <div class="col-md-4">
-          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</p>
+        <div class="col-md-3">
+          <p class="text-muted">
+            <strong>Name</strong>
+            <br>James "Tyler" Warren
+            <br><br><strong>Age</strong>
+            <br>33 years
+            <br><br><strong>Location</strong>
+            <br>San Antonio, TX
+            <br><br><strong>Other Interests</strong>
+            <br>Anything outdoors, active or sports related, live music, San Antonio Spurs, spending time with friends and family, community service in San Antonio 
+          </p>
         </div><!--/col-md-6-->
       </div><!--/row-->
     </div><!-- /.container -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <img src="assets/img/items.png" class="img-responsive" alt="">
-        </div>
-      </div><!--/row-->
-    </div><!--/.container-->
+        </div> -->
+      <!-- </div> --><!--/row-->
+    <!-- </div> --><!--/.container-->
+    <!--  ABOUT ME END -->
+   
 
-    <div id="g">
+
+    <div id="portfolio">
       <div class="container">
         <div class="row centered">
           <h2>Check some of my latest works.</h2>
@@ -297,7 +316,7 @@
         </div>
       </div><!--/container-->
     </div><!--/.F-->
-
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -308,6 +327,7 @@
     <script src="assets/js/jquery.hoverex.min.js"></script>
     <script src="assets/js/jquery.prettyPhoto.js"></script>
     <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src"http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
 
@@ -391,7 +411,31 @@
     $(window).on('resize', function () { 
     setPortfolio();          
   });
+
 })(jQuery);
+</script>
+<script>
+
+  // NAVBAR OPEN/CLOSE
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+  }
+
+
+</script>
+<script>
+  $("#portolio_link").click(function(){
+    console.log($("#portfolio").length))
+    $("#portfolio").slideUp(1000});
+  })
+  
+
 </script>
   </body>
 </html>
