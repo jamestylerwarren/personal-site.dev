@@ -34,10 +34,10 @@
     <nav id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#about">About</a>
-      <a id="portfolio_link" href="#portfolio">Portfolio</a>
-      <a href="#career">Career</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#experience">Experience</a>
       <a href="#education">Education</a>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div id="main">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -226,9 +226,19 @@
       </div><!-- portfolio -->
     </div><!-- portfolio container -->
 
+
+    <div id="experience" class="container mt">
+      <div class="container">
+        <div class="row centered">
+          <h2>Experience</h2>
+        </div><!--/row-->
+      </div><!--/.container-->
+    </div>
+
+
     <div class="container mt">
         <div class="row clients centered">
-          <h2 class=" centered mb">Languages and resources I have utilized in my personal projects:</h2>
+          <h2 class=" centered mb">Languages and resources utilized in my projects:</h2>
           <div class="col-sm-2 col-sm-offset-1">
             <img src="assets/img/HTML5.svg" alt="HTML5">
           </div>
@@ -397,14 +407,6 @@
       document.getElementById("main").style.marginLeft= "0";
   }
 
-
-</script>
-<script>
-  $("#portolio_link").click(function(){
-    console.log($("#portfolio").length))
-    $("#portfolio").slideUp(1000});
-  })
-  
 
 </script>
   </body>
