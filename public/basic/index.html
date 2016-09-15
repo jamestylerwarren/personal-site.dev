@@ -33,7 +33,7 @@
 
   <body>
     <nav id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" id="close-icon" onclick="closeNav()">&times;</a>
       <a href="#about">About</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#experience">Experience</a>
@@ -41,7 +41,7 @@
       <a href="#contact">Contact</a>
     </nav>
     <div id="main">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
     
     <div id="h">
@@ -88,6 +88,7 @@
     <div id="about" class="container ptb">
       <div class="row">
         <h2 class="centered mb">"The best way to predict the future is to create it." - Peter Drucker"</h2>
+        <hr>
         <div class="col-md-3">
           <p>Junior-level developer transitioning after 8+ years as a project manager. Passionate and naturally curious about learning new skills and technologies, I have experience solving complex problems amidst resource restraints and delivering actionable results. I’m uniquely interested in using back-end languages to solve problems for users and businesses alike. I am currently honing my skills with various personal projects in my free time.</p>
         </div><!--/col-md-6-->
@@ -133,7 +134,7 @@
           <h2>Below is a collection of my latest works.</h2>
           <div class="col-md-8 col-md-offset-2">
             <p>Be sure to check back periodically for new projects and updates to exisiting ones.</p>
-
+            <hr>
           </div><!--/col-md-8-->
         </div><!--/row-->
       </div><!--/.container-->
@@ -271,6 +272,7 @@
     <div id="experience" class="container ptb">
       <div class="row centered">
           <h2>My Work Experience</h2>
+          <hr>
       </div><!--/row-->
       <div class="row">
         <div class="col-xs-12 col-md-7 col-md-offset-0">
@@ -325,8 +327,8 @@
             <button class="btn btn-conf btn-clear">Request for Information</button>
           </div>
         </div><!--/row-->
-      </div><!--/container-->
-    </div><!--/.sep--> -->
+      <!-- </div> --><!--/container-->
+    <!-- </div> --><!--/.sep--> 
 
     <div id="f">
       <div class="container">
@@ -336,7 +338,7 @@
             <a href="https://www.linkedin.com/in/tyler-warren" target="_blank"><i class="fa fa-linkedin"></i></a>
             <a href="https://github.com/jamestylerwarren" target="_blank"><i class="fa fa-github"></i></a>
             <a href="https://twitter.com/jtylerwarren" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-file-pdf-o"></i></a>
+            <a href="http://personal-site.dev/basic/Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
           </div><!--/col-md-8-->
         </div>
       </div><!--/container-->

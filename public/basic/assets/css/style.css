@@ -50,6 +50,13 @@ body {
 	height: 100%;
 }
 
+hr {
+	border-color: #22A7F0;
+  	border-width: 3px;
+  	max-width: 200px;
+  	margin: 30px auto;
+}
+
 .alignleft { float: left; }
 .alignright { float: right; }
 .aligncenter {
@@ -60,7 +67,7 @@ body {
 }
 .centered {text-align: center}
 .mt {margin-top: 50px;}
-.mb {margin-bottom: 50px;}
+.mb {margin-bottom: 20px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
 .ptb {padding-top: 50px; padding-bottom: 80px;}
@@ -427,6 +434,10 @@ input {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+#menu-icon, #close-icon{
+	color: #22A7F0;
 }
 
 
