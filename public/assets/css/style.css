@@ -457,7 +457,9 @@ input {
   .sidenav a {font-size: 18px;}
 }
 
-
+#mySidenav {
+	width: 0px;
+}
 
 /*Bouncing arrow*/
 .arrow {
