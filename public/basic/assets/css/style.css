@@ -402,12 +402,13 @@ input {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    width: 240px;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 20px;
+    padding: 8px 8px 8px 10px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s
@@ -434,8 +435,15 @@ input {
 }
 
 .dropdown-menu>li>a {
-	padding-left: 40px;
+	padding-left: 30px;
 	padding-right: 0;
+	color: #818181;
+	background-color: #111;
+}
+
+.dropdown-menu>li a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    background-color: #111;
 }
 
 #main {
