@@ -206,7 +206,7 @@
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">National Parks</h3>
-                <a data-rel="prettyPhoto" href="assets/img/portfolio/nationalparks.png" class="dmbutton a2" data-toggle="modal" data-target="#mymodal" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
+                <button type="button" data-rel="prettyPhoto" class="dmbutton a2" data-toggle="modal" data-target="#nationalparks" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></button>
               </div><!-- he bg -->
             </div><!-- he view -->    
           </div><!-- he wrap -->
@@ -218,7 +218,7 @@
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">Weather Map</h3>
-                <a data-rel="prettyPhoto" href="assets/img/portfolio/weatherapp.png" class="dmbutton a2" data-toggle="modal" data-target="#mymodal" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
+                <button type="button" data-rel="prettyPhoto" class="dmbutton a2" data-toggle="modal" data-target="#weatherapp" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></button>
                </div><!-- he bg -->
             </div><!-- he view -->    
           </div><!-- he wrap -->
@@ -230,7 +230,7 @@
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">JavaScript Calculator</h3>
-                <a data-rel="prettyPhoto" href="assets/img/portfolio/calculator.png" class="dmbutton a2" data-toggle="modal" data-target="#mymodal" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
+                <button type="button" data-rel="prettyPhoto" class="dmbutton a2" data-toggle="modal" data-target="#calculator" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></button>
               </div><!-- he bg -->
             </div><!-- he view -->    
           </div><!-- he wrap -->
@@ -337,7 +337,82 @@
           </div>
         </div>
       </div>
-    </div> <!-- End Simple Simon modal -->    
+    </div> <!-- End Simple Simon modal -->
+
+    <!-- National Parks Modal -->
+    <div class="modal" id="nationalparks" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <!-- MODAL HEADER -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">National Parks Database</h3>
+          </div>
+          <!-- MODAL BODY -->
+          <div class="modal-body">
+            <img src="assets/img/nationalparkslarge.png" class="img-responsive" alt="National Parks Database">
+          </div>
+          <!-- MODAL FOOTER -->
+          <div class="modal-footer">
+            <p><a href="" target="_blank">National Parks Database</a> is an individually built site that allows users to add, edit and delete their favorite national parks.
+            </p>
+            <p class="modal-technologies"><u>Technologies Utilized:</u> PHP, MySQL, HTML5, Bootstrap and CSS3
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End National Parks modal -->  
+
+    <!-- Weather App Modal -->
+    <div class="modal" id="weatherapp" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <!-- MODAL HEADER -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Weather Map</h3>
+          </div>
+          <!-- MODAL BODY -->
+          <div class="modal-body">
+            <img src="assets/img/weatherapplarge.png" class="img-responsive" alt="Weather Map">
+          </div>
+          <!-- MODAL FOOTER -->
+          <div class="modal-footer">
+            <p><a href="" target="_blank">Weather Map Application</a> is a custom weather app that allows users to drag and drop marker to any location to see three day forecast. 
+            </p>
+            <p class="modal-technologies"><u>Technologies Utilized:</u> JavaScript, Google Maps API, Open Weather Map API, HTML5, Bootstrap and CSS3
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Weather App modal -->  
+
+    <!-- Calculator Modal -->
+    <div class="modal" id="calculator" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <!-- MODAL HEADER -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">JavaScript Calculator</h3>
+          </div>
+          <!-- MODAL BODY -->
+          <div id="calc-modal" class="modal-body">
+            <img src="assets/img/calculatorlarge.png" class="img-responsive" alt="JavaScipt Calculator">
+          </div>
+          <!-- MODAL FOOTER -->
+          <div class="modal-footer">
+            <p><a href="http://personal-site.dev/calculator.html" target="_blank">JavaScript Calculator</a> performs addition, subtraction, multiplication and division. Also allows for decimals and negative numbers.
+            </p>
+            <p class="modal-technologies"><u>Technologies Utilized:</u> JavaScript, HTML5, Bootstrap and CSS3
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Calculator modal -->
 
     <!-- Languages Utilized -->
     <div id="languages" class="container mt">

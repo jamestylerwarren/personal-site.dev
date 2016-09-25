@@ -521,6 +521,11 @@ input {
 	color: black;
 }
 
+#calc-modal {
+	margin: auto;
+	width: 50%;
+}
+
 .modal-footer {
 	text-align: left;
 }
