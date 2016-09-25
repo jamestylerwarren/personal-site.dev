@@ -23,6 +23,8 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -152,13 +154,17 @@
           <div class="he-wrap tpl6">
           <img src="assets/img/portfolio/galapago.png" class="img-responsive" alt="">
             <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
+              <div class="bg a0" data-animate="fadeIn"> 
                 <h3 class="a1" data-animate="fadeInDown">Capstone</h3>
-                <a data-rel="prettyPhoto" href="assets/img/portfolio/galapago.png" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
-               </div><!-- he bg -->
-            </div><!-- he view -->    
+
+                <button type="button" data-rel="prettyPhoto" class="dmbutton a2" data-toggle="modal" data-target="#galapago" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></button>
+
+              </div><!-- he bg -->
+            </div><!-- he view -->
           </div><!-- he wrap -->
         </div><!-- end col-12 -->
+
+
                             
         <div class="portfolio-item web-design">
           <div class="he-wrap tpl6">
@@ -166,7 +172,7 @@
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">FlyPin</h3>
-                <a data-rel="prettyPhoto" href="assets/img/portfolio/flypin_logo.png" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
+                <a data-rel="prettyPhoto" href="assets/img/portfolio/flypin_logo.png" class="dmbutton a2" data-toggle="modal" data-target="#mymodal" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
               </div><!-- he bg -->
             </div><!-- he view -->    
           </div><!-- he wrap -->
@@ -178,7 +184,7 @@
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">Adlister</h3>
-                <a data-rel="prettyPhoto" href="assets/img/portfolio/fadlister.png" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
+                <a data-rel="prettyPhoto" href="assets/img/portfolio/fadlister.png" class="dmbutton a2" data-toggle="modal" data-target="#mymodal" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
               </div><!-- he bg -->
             </div><!-- he view -->    
           </div><!-- he wrap -->
@@ -190,7 +196,7 @@
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">Simple Simon</h3>
-                <a data-rel="prettyPhoto" href="assets/img/portfolio/simple-simon.png" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
+                <a data-rel="prettyPhoto" href="assets/img/portfolio/simple-simon.png" class="dmbutton a2" data-toggle="modal" data-target="#mymodal" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
               </div><!-- he bg -->
             </div><!-- he view -->    
           </div><!-- he wrap -->
@@ -202,7 +208,7 @@
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">National Parks</h3>
-                <a data-rel="prettyPhoto" href="assets/img/portfolio/nationalparks.png" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
+                <a data-rel="prettyPhoto" href="assets/img/portfolio/nationalparks.png" class="dmbutton a2" data-toggle="modal" data-target="#mymodal" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
               </div><!-- he bg -->
             </div><!-- he view -->    
           </div><!-- he wrap -->
@@ -214,7 +220,7 @@
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">Weather Map</h3>
-                <a data-rel="prettyPhoto" href="assets/img/portfolio/weatherapp.png" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
+                <a data-rel="prettyPhoto" href="assets/img/portfolio/weatherapp.png" class="dmbutton a2" data-toggle="modal" data-target="#mymodal" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
                </div><!-- he bg -->
             </div><!-- he view -->    
           </div><!-- he wrap -->
@@ -226,7 +232,7 @@
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">JavaScript Calculator</h3>
-                <a data-rel="prettyPhoto" href="assets/img/portfolio/calculator.png" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
+                <a data-rel="prettyPhoto" href="assets/img/portfolio/calculator.png" class="dmbutton a2" data-toggle="modal" data-target="#mymodal" data-animate="fadeInUp"><i class="fa fa-plus fa-3x"></i></a>
               </div><!-- he bg -->
             </div><!-- he view -->    
           </div><!-- he wrap -->
@@ -236,6 +242,24 @@
       </div><!-- portfolio -->
     </div><!-- portfolio container -->
 
+    <!-- Galapago Modal -->
+    <div class="modal" id="galapago" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End modal --> 
 
 
     <!-- Languages Utilized -->
