@@ -600,13 +600,14 @@ input {
     color: #fff;
     border-radius: 100%;
     border: 7px solid #22A7F0;
-    text-align: center
+    text-align: center;
+    vertical-align: middle;
 }
 
 .timeline>li .timeline-image h4 {
     font-size: 10px;
     margin-top: 12px;
-    line-height: 14px
+    line-height: 14px;
 }
 
 .timeline>li.timeline-inverted>.timeline-panel {
@@ -630,16 +631,16 @@ input {
 }
 
 .timeline>li:last-child {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 .timeline .timeline-heading h4 {
     margin-top: 0;
-    color: inherit
+    color: inherit;
 }
 
 .timeline .timeline-heading h4.subheading {
-    text-transform: none
+    text-transform: none;
 }
 
 .timeline .timeline-body>p,
