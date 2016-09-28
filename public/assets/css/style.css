@@ -546,7 +546,7 @@ input {
     position: absolute;
     content: "";
     width: 2px;
-    background-color: #f1f1f1;
+    background-color: #22A7F0;
     left: 40px;
     margin-left: -1.5px
 }
@@ -599,7 +599,7 @@ input {
     background-color: #22A7F0;
     color: #fff;
     border-radius: 100%;
-    border: 7px solid #f1f1f1;
+    border: 7px solid #22A7F0;
     text-align: center
 }
 
@@ -719,4 +719,8 @@ input {
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px
     }
+}
+
+.left-align {
+	text-align: left;
 }
