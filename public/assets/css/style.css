@@ -339,13 +339,17 @@ input {
 }
 
 #f i {
+	text-align: center;
 	margin-right: 30px;
 	font-size: 35px;
 }
 
 #f a {
+	text-align: center;
 	color: white;
 }
+
+
 
 /* HEADER 2 - PORTFOLIO SECTION */
 #h2 {
@@ -545,7 +549,7 @@ input {
     bottom: 0;
     position: absolute;
     content: "";
-    width: 2px;
+    width: 3px;
     background-color: #22A7F0;
     left: 40px;
     margin-left: -1.5px
