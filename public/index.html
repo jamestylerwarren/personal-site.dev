@@ -482,8 +482,6 @@
       </div>
     </div> <!-- Calculator modal -->
 
-
-
     <!-- Languages Utilized -->
     <div id="languages" class="container mt">
       <div class="row clients centered">
@@ -520,47 +518,14 @@
       </div><!--/row-->
     </div><!--/.G-->
 
-    <!-- Experience With Concepts -->
-    <div id="languages" class="container mtb">
-      <div class="row clients centered">
-        <h2 class=" centered mb">Expertise and Experience with the following concepts:</h2>
-        <div class="col-sm-2">
-          <img class="expertise-icon" src="assets/img/agile.png" alt="AGILE"><br>
-          <p>AGILE PM Methodology</p>
-        </div>
-        <div class="col-sm-2">
-          <img class="expertise-icon" src="assets/img/lean.png" alt="LEAN">
-          <p>LEAN Concepts</p>
-        </div>
-        <div class="col-sm-2">
-          <img class="expertise-icon" src="assets/img/policyandprocedure.png" alt="Policy and Procedure">
-          <p>Policy & Procedure Development</p>
-        </div>
-        <div class="col-sm-2">
-          <img class="expertise-icon" src="assets/img/strategicplanning1.png" alt="Strategic Plannning">
-          <p>Strategic Planning</p>
-        </div>
-        <div class="col-sm-2">
-          <img class="expertise-icon" src="assets/img/teambuilding.png" alt="Team Building, Training & Development">
-          <p>Team Building, Training & Development</p>
-        </div>
-        <div class="col-sm-2">
-          <img class="expertise-icon" src="assets/img/budgetplanning.png" alt="P&L and Budget Planning">
-          <p>P&L and Budget Planning</p>
-        </div>
-      </div><!--/row-->
-    </div><!--End Experience with concepts-->
-
-
-
     <div id="experience" class="container mtb">
       <div class="row centered">
-          <h2>My Experience</h2>
+          <h2>My Professional Experience & Education</h2>
           <hr>
       </div><!--/row-->
-      <div id="myTimeline">
+      <div id="timelineOne">
 
-        <!-- Codeup -->
+        <!-- Start Codeup -->
         <div class="timeline-heading">
           <h3><strong>Codeup</strong></h3>
           <h4 class="subheading">Student, May 2016 - Sep. 2016</h4>
@@ -580,7 +545,7 @@
         </div>
         <!-- End Codeup -->
 
-        <!-- Gecko -->
+        <!-- Start Gecko -->
         <div class="timeline-heading">
           <h3><strong>Senior AGILE Project Manager</strong></h3>
           <h4 class="subheading">Gecko Resources, 2007 - 2016</h4>
@@ -622,11 +587,46 @@
               </li>
             </ul>
           </div>
+        </div> <!-- End Gecko -->
+      </div> <!-- End timelineOne -->
+    </div> <!-- End Experience -->
+
+    <!-- Experience With Concepts -->
+    <div id="languages" class="container mtb">
+      <div class="row clients centered">
+        <h2 class=" centered mb">Expertise and Experience with the following concepts:</h2>
+        <div class="col-sm-2">
+          <img class="expertise-icon" src="assets/img/agile.png" alt="AGILE"><br>
+          <p>AGILE PM Methodology</p>
         </div>
-        <!-- End Gecko -->
+        <div class="col-sm-2">
+          <img class="expertise-icon" src="assets/img/lean.png" alt="LEAN">
+          <p>LEAN Concepts</p>
+        </div>
+        <div class="col-sm-2">
+          <img class="expertise-icon" src="assets/img/policyandprocedure.png" alt="Policy and Procedure">
+          <p>Policy & Procedure Development</p>
+        </div>
+        <div class="col-sm-2">
+          <img class="expertise-icon" src="assets/img/strategicplanning1.png" alt="Strategic Plannning">
+          <p>Strategic Planning</p>
+        </div>
+        <div class="col-sm-2">
+          <img class="expertise-icon" src="assets/img/teambuilding.png" alt="Team Building, Training & Development">
+          <p>Team Building, Training & Development</p>
+        </div>
+        <div class="col-sm-2">
+          <img class="expertise-icon" src="assets/img/budgetplanning.png" alt="P&L and Budget Planning">
+          <p>P&L and Budget Planning</p>
+        </div>
+      </div><!--/row-->
+    </div><!--End Experience with Concepts-->
 
 
-        <!-- Generals -->
+
+    <div class="container mtb2">
+      <div id="timelineTwo">
+        <!-- Start Generals -->
         <div class="timeline-heading">
           <h3><strong>Professional Basketball</strong></h3>
           <h4 class="subheading">Washington Generals, Nov. 2006 - Nov. 2007</h4>
@@ -646,7 +646,7 @@
         </div>
         <!-- End Generals -->
 
-        <!-- Millsaps -->
+        <!-- Start Millsaps -->
         <div class="timeline-heading">
           <h3><strong>Millsaps College</strong></h3>
           <h4 class="subheading">Bachelors in Business Administration, 2002 - 2006</h4>
@@ -667,7 +667,7 @@
             </ul>
           </div>
         </div> <!-- End Millsaps -->
-      </div> <!-- End myTimeline -->
+      </div> <!-- End timelineTwo -->
     </div> <!-- End Experience -->
     
 
@@ -802,12 +802,21 @@
 
 </script>
 <script>
-  $('#myTimeline').timeline({
+  $('#timelineOne').timeline({
     startSide: 'right',
     alternate: true,
     showDate: true,
     animate: true
   });
 </script>
+<script>
+  $('#timelineTwo').timeline({
+    startSide: 'right',
+    alternate: true,
+    showDate: true,
+    animate: true
+  });
+</script>
+
 </body>
 </html>
