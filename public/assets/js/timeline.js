@@ -99,7 +99,7 @@
                 // Initial check if in viewport
                 $('.timeline-block').each(function() {
                     if (checkViewport($(this))) {
-                        $(this).fadeTo(300,1);
+                        $(this).fadeTo(500,1);
                     }
                 });
 
@@ -107,7 +107,7 @@
                 $(window).scroll(function() {
                     $('.timeline-block').each(function() {
                         if (checkViewport($(this))) {
-                            $(this).fadeTo(300,1);
+                            $(this).fadeTo(500,1);
                         }
                     });
                 });
